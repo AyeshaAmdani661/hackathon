@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: orangered;
+    border-radius: 3rem;
+
+}
+a,a:hover,a:focus{
+    text-decoration: none;
+}
+.navbar{
+    transition: all 0.4s ease;
+}
+.nav-link{
+    text-transform: uppercase;
+    color: white;
+    margin-right: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+.nav-link:hover{
+    color: white;
+    text-decoration: overline;
+    text-decoration-color: orangered;
+}
+.nav-link:focus{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-color: orangered;
+    color: #fff;
+}
+.navbar-brand,.navbar-brand:hover,.navbar-brand:focus{
+    color: white;
+    font-weight: 800;
+    font-size: 30px;
+    font-family:'Anek Latin';
+}
+.logo{
+    font-weight: 600;
+    font-size: 45px;
+    color: rgb(255, 106, 52);
+    margin-left: 30px ;
+    background-color: #fff;
+    border-radius: 3rem;
+}
+.width{
+    width: 40px;
+    height: 33px;
+}
+
+.i{
+    font-size: 1.5rem;
+}
+.i:hover{
+    color: orangered;
+    background-color: white;
+    border-radius: 2rem;
+}
+.color{
+    color: orangered;
+}
+.color1{
+    color: rgb(0, 0, 61);
+}
+.color2{
+    color: #fff;
+}
+.bg{
+    background-color: rgb(0, 0, 61,0.9);
+    border-radius: 3rem;
+    padding: 5px;
+}
+.main-btn{
+    display: inline-block;
+    border-radius: 3rem;
+    color: white;
+    background-color: orangered;
+    text-transform: capitalize;
+    align-items: center;
+    font-weight: 600;
+    padding: 0.625rem 1.875rem;
+    font-size: 1.275rem;
+    box-shadow: 0px 2px 10px -1px rgb(0, 0, 0 / 19%);
+    -webkit-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s;
+}
+
+.main-btn:hover{
+    color: #fff;
+    border: #fff solid 3px;
+    background-color: transparent;
+}
+
+.white-btn{
+    display: inline-block;
+    border-radius: 2rem;
+    color: white;
+    background-color: rgb(0, 0, 61);
+    text-transform: capitalize;
+    align-items: center;
+    font-weight: 600;
+    padding: 0.625rem 1.875rem;
+    font-size: 1.275rem;
+    box-shadow: 0px 2px 10px -1px rgb(0, 0, 0 / 19%);
+    -webkit-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s;
+    border: #fff solid 8px;
+
+}
+
+.white-btn:hover{
+    color: #fff;
+    border: #fff solid 5px;
+    font-size: 1.675rem;
+    background-color: rgb(0, 0, 61);
+}
+
+.blue-btn{
+    position: relative;
+    display: inline-flex;
+    border-radius: 3rem;
+    color: white;
+    background-color: rgb(0, 0, 61);
+    text-transform: capitalize;
+    font-weight: 600;
+    padding: 1rem 3rem;
+    font-size: 1.275rem;
+    box-shadow: 0px 2px 10px -1px rgb(0, 0, 0 / 19%);
+    overflow: hidden;
+}
+.blue-btn span{
+    position: relative;
+    z-index: 1;
+}
+.blue-btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 64px;
+    height: 64px;
+    background: #fc5113;
+    border-radius: 8rem;
+    transition: width 1.2s, height 1.2s;
+}
+.blue-btn:hover::before{
+    width: 800px;
+    height: 800px;
+}
+.navbar-toggler{
+    color: white;
+}
+.navbar-toggler:focus {
+    outline: unset;
+    border: unset;
+    box-shadow: none;
+}
+#home{
+    padding: 120px 0;
+    background-image: url(../images/g4.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 500;
+    text-transform: capitalize;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px 0px;
+    letter-spacing: 1px;
+}
+p{
+    font-size: 1.2rem;
+    columns: #333;
+}
+.div{
+    /* background-color: rgb(0, 153, 255); */
+    max-height: 600px;
+}
+.intro{
+    margin-bottom: 50px;
+}
+.intro .divider{
+    background-color: orangered;
+    height: 2px;
+    width: 120px;
+    margin: 18px auto;
+}
+.about-section {
+    background-color: #fff;
+}
+hr{
+    color: orangered;
+}
+.imgwidth{
+    width: 500px;
+    margin: 0 20px;
+    border-radius: 1.7rem;
+}
+.course .box-container .box .content .stars i{
+    color: #ffc005;
+    font-size: 1.7rem;
+    padding: 1rem .1rem;
+}
+.course .box-container .box .content .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+}
+.card{
+    position: relative;
+    border-radius: 0.9rem;
+    display: inline-block;
+    border: #ff4500;
+    width: 18rem;
+    height: 27rem;
+    margin: 3rem 3rem;
+    background-color: rgb(0, 0, 61);
+    color: #fff;
+    -webkit-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s;
+
+}
+.card-body{
+    display: block;
+}
+/* .new{
+    border-radius: 0.9rem;
+    position: relative;
+    display: inline-flex;
+    width: 18rem;
+    height: 19rem;
+    background-color: orangered;
+    -webkit-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s;
+} */
+.i1{
+    font-size: 2rem;
+    padding: 1rem;
+}
+.overlay{
+    position: absolute;
+    transition: all .3s ease;
+    border-radius: 0.9rem;
+    width: 20rem;
+    height: 19rem;
+    opacity: 0;
+    background-color: #eee;
+    -webkit-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s;
+}
+
+.overlayBottom h3{
+    margin: 30px 0;
+}
+.overlayBottom{
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    background-color: orangered;
+}
+.card:hover .overlay{
+    opacity: 1;
+}
+.card:hover .overlayBottom{
+    height: 76%;
+}
+@media (max-width<=576) {
+    .card{
+        width: 15rem;
+        height: 26rem;
+    
+    }
+    .card-body h1{
+        font-size: 2rem;
+        margin: 0;
+    }
+}
