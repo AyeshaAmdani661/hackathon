@@ -6,18 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <!-- bootstrap link -->
+  <!-- bootstrap css link -->
   <link rel="stylesheet" href="assets/css/bootstrap.css">
   <!-- font awesome cdn -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-  <!-- custom css -->
+  <!-- css -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
-  <!-- header section starts-->
+<body class="body">
+  <!-- header section -->
   <header>
-    <nav class="navbar navbar-expand-lg bg fixed-top">
+    <nav id="remove" class="navbar navbar-expand-lg bg fixed-top">
       <div class="container-fluid bg-transparent">
         <a class="navbar-brand" href="#">
           <i class="fa-solid fa-head-side-virus logo width"></i>
@@ -29,7 +29,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">about</a>
@@ -41,10 +41,10 @@
               <a class="nav-link" href="#teachers">teachers</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#reviews">reviews</a>
+              <a class="nav-link" href="#faq">FAQs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact"><i class="fa-solid fa-circle-user i"></i></a>
+              <a class="nav-link" id="login" href="#"><i class="fa-solid fa-circle-user i"></i></a>
             </li>
           </ul>
         </div>
@@ -61,17 +61,17 @@
           <h1 class="text-white my-5 display-4">Stay <b class="color">connected</b><br> get <b
               class="color">learning</b> & make
             a<br> future <b class="color">bright</b></h1>
-          <a href="assets/more pages/contact.html" class="main-btn">get started</a>
+          <a href="#" id="login" class="main-btn">get started</a>
         </div>
       </div>
     </div>
   </section>
-  <!-- home section ends -->
+  <!-- home section end -->
   <!-- about section -->
   <section id="about" class="text-center">
     <div class="container">
       <div class="row">
-        <div class="col-12 intro">
+        <div class="col-12 intro mt-5">
           <h1 class="color1 mt-5">Why to choose us?</h1>
           <div class="divider"></div>
           <p>
@@ -82,96 +82,39 @@
             maxime nostrum blanditiis illum vel aut pariatur praesentium inventore? Enim id quaerat sit magnam dolor
             dolores, possimus ducimus modi.
           </p>
-          <div class="wrapper">
-            <div class="face" align="right"></div>
-          </div>
           <a href="assets/more pages/about.html" class="blue-btn mt-5"><span class="color2">Learn More</span></a>
         </div>
       </div>
       <hr>
     </div>
   </section>
-  <!-- about section ends -->
+  <!-- about section end -->
   <!-- cources section -->
-  <section id="courses" class="text-center intro course">
+  <section id="courses" class="text-center course">
     <div class="container">
       <div class="row">
-        <div class="col-12 intro">
+        <div class="col-12 intro mt-5">
           <h1 class="color1 mt-5">Our popular Courses</h1>
           <div class="divider"></div>
           <p class="mt-5">
             There are many variations of sam dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit,
             sequi? reiciendis reprehenderit, amet libero! Illo, eum culpa sit aliquam optio est rerum at praesentium
             repellat nulla unde doloremque id, excepturi aspernatur. Dolorem, iure! Officiis ipsam deserunt nostrum non,
-            porro numquam? Ex officia earum illum assumenda ut ducimus voluptatibus.
+            porro numquam? Ex officia earum illum assumenda ut ducimus voluptatibus. Lorem ipsum dolor sit amet deserunt
+            nostrum non,
+            porro numquam? Ex officia earum illum assumenda ut ducimus voluptatibus. Lorem ipsum dolor sit amet
           </p>
-          <a href="assets/more pages/about.html" class="blue-btn mt-3"><span class="color2">Learn More</span></a>
+          <a href="assets/more pages/courses.html" class="blue-btn mt-5"><span class="color2">Learn More</span></a>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-12 col-md-8 col-sm-2">
-          <div id="card" class="card text-center">
+          <div id="card7" class="card text-center">
             <div class="card-body">
               <div class="box-container">
                 <div class="box">
-                  <h3>html</h3>
-                  <i class="fa-solid fa-code i1"></i>
-                  <div class="content mb-3">
-                    <div class="stars my-2">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p>Lorem ipsum dolor earum Lo Molestiae voltaset i io error fugit dolor quo quod commodi, et
-                      deleniti?</p>
-                  </div>
-                </div>
-                <div class="overlay overlayBottom">
-                  <h3><i class="fa-solid color1 fa-clock"></i> 2 hours</h3>
-                  <h3><i class="fa-solid color1 fa-calendar-alt"></i> 1 months</h3>
-                  <h3><i class="fa-solid color1 fa-book"></i> 1 module</h3>
-                  <h3><i class="fa-solid color1 fa-hand-holding-dollar"></i> 50 dollar</h3>
-                  <a href="assets/more pages/about.html" class="white-btn mt-4"><span>Apply now</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="card1" class="card text-center">
-            <div class="card-body">
-              <div class="box-container">
-                <div class="box">
-                  <h3>css</h3>
-                  <i class="fa-brands fa-css3 i1"></i>
-                  <div class="content mb-3">
-                    <div class="stars my-2">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                    </div>
-                    <p>Lorem ipsum dolor earum Lo Molestiae voltaset i io error fugit dolor quo quod commodi, et
-                      deleniti?</p>
-                  </div>
-                </div>
-                <div class="overlay overlayBottom">
-                  <h3><i class="fa-solid color1 fa-clock"></i> 2 hours</h3>
-                  <h3><i class="fa-solid color1 fa-calendar-alt"></i> 2 months</h3>
-                  <h3><i class="fa-solid color1 fa-book"></i> 1 modules</h3>
-                  <h3><i class="fa-solid color1 fa-hand-holding-dollar"></i> 50 dollar</h3>
-                  <a href="assets/more pages/about.html" class="white-btn mt-4"><span>Apply now</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="card2" class="card text-center">
-            <div class="card-body">
-              <div class="box-container">
-                <div class="box">
-                  <h3>javascript</h3>
-                  <i class="fa-brands fa-js-square i1"></i>
+                  <h3>python</h3>
+                  <i class="fa-brands fa-python i1"></i>
                   <div class="content mb-3">
                     <div class="stars my-2">
                       <i class="fa-solid fa-star"></i>
@@ -185,11 +128,67 @@
                   </div>
                 </div>
                 <div class="overlay overlayBottom">
+                  <h3>miss neha</h3>
                   <h3><i class="fa-solid color1 fa-clock"></i> 2 hours</h3>
                   <h3><i class="fa-solid color1 fa-calendar-alt"></i> 6 months</h3>
-                  <h3><i class="fa-solid color1 fa-book"></i> 2 modules</h3>
-                  <h3><i class="fa-solid color1 fa-hand-holding-dollar"></i> 50 dollar</h3>
-                  <a href="assets/more pages/about.html" class="white-btn mt-4"><span>Apply now</span></a>
+                  <h3><i class="fa-solid color1 fa-book"></i> 12 modules</h3>
+                  <a href="assets/more pages/login.html" class="white-btn mt-4"><span>Apply now</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="card8" class="card text-center">
+            <div class="card-body">
+              <div class="box-container">
+                <div class="box">
+                  <h3>networking</h3>
+                  <i class="fa-solid fa-circle-nodes i1"></i>
+                  <div class="content mb-3">
+                    <div class="stars my-2">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>Lorem ipsum dolor earum Lo Molestiae voltaset i io error fugit dolor quo quod commodi, et
+                      deleniti?</p>
+                  </div>
+                </div>
+                <div class="overlay overlayBottom">
+                  <h3>miss bushra</h3>
+                  <h3><i class="fa-solid color1 fa-clock"></i> 2 hours</h3>
+                  <h3><i class="fa-solid color1 fa-calendar-alt"></i> 6 months</h3>
+                  <h3><i class="fa-solid color1 fa-book"></i> 12 modules</h3>
+                  <a href="assets/more pages/login.html" class="white-btn mt-4"><span>Apply now</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="card6" class="card text-center">
+            <div class="card-body">
+              <div class="box-container">
+                <div class="box">
+                  <h3>PHP</h3>
+                  <i class="fa-brands fa-php i1"></i>
+                  <div class="content mb-3">
+                    <div class="stars my-2">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>Lorem ipsum dolor earum Lo Molestiae voltaset i io error fugit dolor quo quod commodi, et
+                      deleniti?</p>
+                  </div>
+                </div>
+                <div class="overlay overlayBottom">
+                  <h3>miss hira</h3>
+                  <h3><i class="fa-solid color1 fa-clock"></i> 2 hours</h3>
+                  <h3><i class="fa-solid color1 fa-calendar-alt"></i> 6 months</h3>
+                  <h3><i class="fa-solid color1 fa-book"></i> 12 modules</h3>
+                  <a href="assets/more pages/login.html" class="white-btn mt-4"><span>Apply now</span></a>
                 </div>
               </div>
             </div>
@@ -213,11 +212,11 @@
                   </div>
                 </div>
                 <div class="overlay overlayBottom">
+                  <h3>miss fiza</h3>
                   <h3><i class="fa-solid color1 fa-clock"></i> 2 hours</h3>
                   <h3><i class="fa-solid color1 fa-calendar-alt"></i> 1 year</h3>
                   <h3><i class="fa-solid color1 fa-book"></i> 4 modules</h3>
-                  <h3><i class="fa-solid color1 fa-hand-holding-dollar"></i> 50 dollar</h3>
-                  <a href="assets/more pages/about.html" class="white-btn mt-4"><span>Apply now</span></a>
+                  <a href="assets/more pages/login.html" class="white-btn mt-4"><span>Apply now</span></a>
                 </div>
               </div>
             </div>
@@ -241,11 +240,11 @@
                   </div>
                 </div>
                 <div class="overlay overlayBottom">
+                  <h3>sir saad</h3>
                   <h3><i class="fa-solid color1 fa-clock"></i> 2 hours</h3>
                   <h3><i class="fa-solid color1 fa-calendar-alt"></i> 6 months</h3>
                   <h3><i class="fa-solid color1 fa-book"></i> 12 modules</h3>
-                  <h3><i class="fa-solid color1 fa-hand-holding-dollar"></i> 50 dollar</h3>
-                  <a href="assets/more pages/about.html" class="white-btn mt-4"><span>Apply now</span></a>
+                  <a href="assets/more pages/login.html" class="white-btn mt-4"><span>Apply now</span></a>
                 </div>
               </div>
             </div>
@@ -269,39 +268,11 @@
                   </div>
                 </div>
                 <div class="overlay overlayBottom">
+                  <h3>sir ali</h3>
                   <h3><i class="fa-solid color1 fa-clock"></i> 2 hours</h3>
                   <h3><i class="fa-solid color1 fa-calendar-alt"></i> 6 months</h3>
                   <h3><i class="fa-solid color1 fa-book"></i> 12 modules</h3>
-                  <h3><i class="fa-solid color1 fa-hand-holding-dollar"></i> 50 dollar</h3>
-                  <a href="assets/more pages/about.html" class="white-btn mt-4"><span>Apply now</span></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="card6" class="card text-center">
-            <div class="card-body">
-              <div class="box-container">
-                <div class="box">
-                  <h3>Mobile Apps Development</h3>
-                  <i class="fa-solid fa-mobile i1"></i>
-                  <div class="content mb-3">
-                    <div class="stars my-2">
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <p>Lorem ipsum dolor earum Lo Molestiae voltaset i io error fugit dolor quo quod commodi, et
-                      deleniti?</p>
-                  </div>
-                </div>
-                <div class="overlay overlayBottom">
-                  <h3><i class="fa-solid color1 fa-clock"></i> 2 hours</h3>
-                  <h3><i class="fa-solid color1 fa-calendar-alt"></i> 6 months</h3>
-                  <h3><i class="fa-solid color1 fa-book"></i> 12 modules</h3>
-                  <h3><i class="fa-solid color1 fa-hand-holding-dollar"></i> 50 dollar</h3>
-                  <a href="assets/more pages/about.html" class="white-btn mt-4"><span>Apply now</span></a>
+                  <a href="assets/more pages/login.html" class="white-btn mt-4"><span>Apply now</span></a>
                 </div>
               </div>
             </div>
@@ -309,28 +280,30 @@
         </div>
       </div>
     </div>
+    <a href="assets/more pages/courses.html" class="blue-btn my-5"><span class="color2">view More</span></a>
   </section>
-  <!-- cources section ends -->
+  <!-- cources section end -->
   <!-- teachers section -->
   <section id="teachers">
     <div class="container">
-      <div class="text-center pb-4 intro">
-        <h1 class="color1 mt-2 pt-4">Our smart teachers</h1>
+      <div class="text-center intro">
+        <h1 class="color1 pt-4">Our smart teachers</h1>
         <div class="divider"></div>
       </div>
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">      
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="card1">
               <div class="card1-thumb">
                 <img src="assets/images/t5.jpg" class="img-fluid" alt="">
                 <span class="teacher-name">
-                  Miss Fiza
+                  Fiza malik
                 </span>
               </div>
               <div class="card1-body">
                 <p class="review">
-                  Fiza is a high-performing, strategic-thinking professional with over 20 years of experience in the communication 
+                  Fiza is a high-performing, strategic-thinking professional with over 20 years of experience in the
+                  communication
                   sector in The United Nations.
                 </p>
                 <div class="stars my-2">
@@ -348,12 +321,14 @@
               <div class="card1-thumb">
                 <img src="assets/images/t3.jpg" class="img-fluid" alt="">
                 <span class="teacher-name">
-                  sir rehman
+                  abdul rehman
                 </span>
               </div>
               <div class="card1-body">
                 <p class="review">
-                  Rehman is the Founder & CEO of E-Comrades, a Pakistani Entrepreneur, and Amazon Expert successes, providing a chance to share his knowledge and help in a vibrant business.
+                  Abdul Rehman is the Founder & CEO of E-Comrades, a Pakistani Entrepreneur, and Amazon Expert
+                  successes,
+                  providing a chance to share his knowledge and help in a vibrant business.
                 </p>
                 <div class="stars my-2">
                   <i class="fa-solid fa-star"></i>
@@ -370,13 +345,14 @@
               <div class="card1-thumb">
                 <img src="assets/images/t4.jpg" class="img-fluid" alt="">
                 <span class="teacher-name">
-                  sir imran
+                  imran bader
                 </span>
               </div>
               <div class="card1-body">
                 <p class="review">
-                  Imran have an experience of over 35 years,he has taught English addition to teaching at universities in Saudi Arabia and UK. 
-                 Professional Studies in Education
+                  Imran have an experience of over 35 years,he has taught English addition to teaching at universities
+                  in Saudi Arabia and UK.
+                  Professional Studies in Education
                 </p>
                 <div class="stars my-2">
                   <i class="fa-solid fa-star"></i>
@@ -393,12 +369,13 @@
               <div class="card1-thumb">
                 <img src="assets/images/t1.jpg" class="img-fluid" alt="">
                 <span class="teacher-name">
-                  sir aamir
+                  aamir
                 </span>
               </div>
               <div class="card1-body">
                 <p class="review">
-                  Aamir is the Founder & CEO of E-Comrades, a Pakistani Entrepreneur, and Amazon Expert successes, providing a chance to share his knowledge and help in a vibrant business.
+                  Aamir is the Founder & CEO of E-Comrades, a Pakistani Entrepreneur, and Amazon Expert successes,
+                  providing a chance to share his knowledge and help in a vibrant business.
                 </p>
                 <div class="stars my-2">
                   <i class="fa-solid fa-star"></i>
@@ -415,13 +392,13 @@
               <div class="card1-thumb">
                 <img src="assets/images/t7.jpg" class="img-fluid" alt="">
                 <span class="teacher-name">
-                  sir noman
+                  noman saleem
                 </span>
               </div>
               <div class="card1-body">
                 <p class="review">
-                  Noman have an experience of over,ddition to teaching at universities in Saudi Arabia and UK. 
-                  Professional Studies in Educationchance to share his knowledge and help in a vibrant business.
+                  Noman have an experience of over,ddition to teaching at universities in Saudi Arabia and UK.
+                  Professional Studies in Educationchance in a vibrant business.
                 </p>
                 <div class="stars my-2">
                   <i class="fa-solid fa-star"></i>
@@ -438,12 +415,12 @@
               <div class="card1-thumb">
                 <img src="assets/images/t2.jpg" class="img-fluid" alt="">
                 <span class="teacher-name">
-                  miss bushra
+                  bushra jamil
                 </span>
               </div>
               <div class="card1-body">
                 <p class="review">
-                  Bushra is a high-performing, strategic-thinking professional in the communication 
+                  Bushra is a high-performing, strategic-thinking professional in the communication
                   sector in national and international corporate organizations such as The United Nations.
                 </p>
                 <div class="stars my-2">
@@ -459,15 +436,15 @@
           <div class="carousel-item">
             <div class="card1">
               <div class="card1-thumb">
-                <img src="https://www.salesfix.com.au/wp-content/uploads/2020/02/business-3560916_1920-1.jpg" class="img-fluid" alt="">
+                <img src="assets/images/t7.PNG" class="img-fluid" alt="">
                 <span class="teacher-name">
-                  Miss Neha
+                  Neha
                 </span>
               </div>
               <div class="card1-body">
                 <p class="review">
-                  Neha has academic training and experience in teaching and the  authors 
-                   The training module, posters were developed by Neha as part of her work with GIZ.
+                  Neha has academic training and experience in teaching and the authors
+                  The training module, posters were developed by Neha as part of her work with GIZ.
                 </p>
                 <div class="stars my-2">
                   <i class="fa-solid fa-star"></i>
@@ -479,24 +456,199 @@
               </div>
             </div>
           </div>
-          
-        </div>
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
 
         </div>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+            aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+            aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+            aria-label="Slide 7"></button>
+        </div>
+        <center>
+          <a href="assets/more pages/teachers.html" class="new-btn my-3"><span>view More</span></a>
+        </center>
+      </div>
+    </div>
+
+  </section>
+  <!-- teachers section end-->
+  <!-- faqs section -->
+  <section id="faq">
+    <div class="faq pb-5">
+      <div class="container text-center">
+        <div class="mt-5">
+          <i class="fa-solid color1 fa-circle"></i>
+          <i class="fa-solid color1 fa-circle"></i>
+          <i class="fa-solid color1 fa-circle"></i>
+          <i class="fa-solid color1 fa-circle"></i>
+        </div>
+        <div class="row">
+          <div class="col-12 intro mt-5">
+            <h1 class="color1 text-center mt-5">Frequently Asked Questions</h1>
+            <div class="divider"></div>
+          </div>
+        </div>
+        <div class="new-class">
+          <div>
+            <h4>What is Learning in <span><i class="fa-solid fa-question"></i></span></h4>
+            <p> Learning in is to empower the youth with skills that are in-demand in freelance market.
+              It consists of multiple online skill-based training courses. This program is designed for
+              enhancing the skills which are in demand currently.
+            </p>
+            <hr class="color1">
+          </div>
+        </div>
+        <div class="new-class">
+          <div>
+            <h4>Why should I join this program <span><i class="fa-solid fa-question"></i></span></h4>
+            <p>You should join this program to enhance/learn skills that are in-demand in freelance markets. Learning
+              these skills
+              will enable you to become part of rapidly growing freelance market and earn without looking for a job.
+            </p>
+            <hr class="color1">
+          </div>
+        </div>
+        <div class="new-class">
+          <div>
+            <h4>Do I have to pay to join the training? <span><i class="fa-solid fa-question"></i></span></h4>
+            <p>There is no fee and the program is being offered absolutely for <strong>FREE!</strong> All you have to do
+              is
+              sign up for the program and start learning your favourite skill.
+            </p>
+          </div>
+        </div>
+        <a href="assets/more pages/faqs.html" class="blue-btn my-5"><span class="color2">Learn More</span></a>
+      </div>
 
     </div>
   </section>
-  <!-- teachers section ends-->
-
+  <!-- faqs section ends -->
+  <!-- login section  -->
+  <div class="bg-modal">
+    <div class="container">
+      <div class="forms">
+        <div class="form login">
+          <span class="title">Login</span>
+          <form>
+            <div class="input-field">
+              <input type="email" placeholder="Email" required>
+              <i class="fa-solid fa-envelope icon"></i>
+            </div>
+            <div class="input-field">
+              <input type="password" class="password" placeholder="Password" required>
+              <i class="fa-solid fa-lock icon"></i>
+              <i class="fa-solid fa-eye-slash show-hide"></i>
+            </div>
+            <div class="checkbox-text">
+              <div class="checkbox-content">
+                <input type="checkbox" id="logCheck">
+                <br><br>
+                <label for="logCheck" class="text">Remember me</label>
+              </div>
+              <a href="#" class="text">Forgot password?</a>
+            </div>
+            <span class="main-btn">Login Now</span>
+          </form>
+          <div class="login-signup">
+            <span class="text">Not a member?
+              <br>
+              <a href="#" class="text signup-link">Signup Now</a>
+            </span>
+          </div>
+        </div>
+        <div class="form login">
+          <span class="title">
+            Registration
+          </span>
+          <form>
+            <div class="input-field">
+              <input type="email" placeholder="Enter your Name" required>
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input-field">
+              <input type="email" placeholder="Email" required>
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="input-field">
+              <input type="password" class="password" placeholder="Password" required>
+              <i class="fa-solid fa-lock"></i>
+            </div>
+            <div class="input-field">
+              <input type="password" class="password" placeholder="Confirm Password" required>
+              <i class="fa-solid fa-lock"></i>
+              <i class="fa-solid fa-eye-slash show-hide"></i>
+            </div>
+            <div class="checkbox-text">
+              <div class="checkbox-content">
+                <input type="checkbox" id="logCheck">
+                <br><br>
+                <label for="logCheck" class="text">Remember me</label>
+              </div>
+              <a href="#" class="text">Forgot password?</a>
+            </div>
+            <span class="main-btn">Login Now</span>
+          </form>
+          <div class="login-signup">
+            <span class="text">Not a member?
+              <br>
+              <a href="#" class="text login-link">login Now</a>
+            </span>
+          </div>
+        </div>
+        <div class="close">+</div>
+      </div>
+    </div>
+  </div>
+  <!-- login section ends -->
+  <!-- footer section -->
+  <footer id="footer">
+    <div class="sticky-bottom">
+      <div class="footer py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <a href="assets/more pages/login.html" class="footer-link">Register</a>
+              <a href="assets/more pages/courses.html" class="footer-link">Courses</a>
+              <a href="assets/more pages/teachers.html" class="footer-link">Teachers</a>
+              <a href="assets/more pages/faqs.html" class="footer-link">FAQs</a>
+              <div class="footer-social pt-4 text-center">
+                <a href="https://www.facebook.com" target="_blank"><i class="mx-4 fab fa-facebook-f"
+                    title="Facebook"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="mx-4 fab fa-twitter" title="Twitter"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="mx-4 fa-brands fa-linkedin-in"
+                    title="Linkedin-in"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="mx-4 fab fa-instagram"
+                    title="Instagram"></i></a>
+                <a href="#" target="_blank"><i class="mx-4 fa-solid fa-phone" title="Phone"></i></a>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="footer-copy">
+                <div class="copy-right text-center pt-5">
+                  <hr class="color2">
+                  <p class="text">&copy; 2022. Learning in. All rights reserved.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section end -->
+  <!-- bootstrap js -->
   <script src="assets/js/bootstrap.bundle.js"></script>
+  <!-- js -->
   <script src="assets/js/index.js"></script>
 </body>
 

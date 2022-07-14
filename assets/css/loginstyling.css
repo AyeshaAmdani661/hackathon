@@ -1,0 +1,114 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@600&display=swap');
+body{
+
+     background-image: url(../images/i18.jpg);
+     background-size: cover;
+    overflow: hidden;
+}
+.login-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form form {
+    width: 25rem;
+    background: rgba(0, 0, 61,0.1);
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: 0 .1rem .5rem #fff;
+}
+
+.navbar-brand, .navbar-brand:hover, .navbar-brand:focus {
+    color: white;
+    font-weight: 800;
+    font-size: 30px;
+    font-family: 'Anek Latin';
+    margin: 3rem ;
+    padding: 3rem;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 45px;
+    color: rgb(255, 106, 52);
+    background-color: #fff;
+    border-radius: 3rem;
+}
+
+.width {
+    width: 40px;
+    height: 33px;
+}
+
+.login-form form .box {
+    width: 100%;
+    padding: .2rem .4rem;
+    margin: .5rem 0;
+    border: none;
+    border-bottom: .2rem solid #fff;
+    font-size: 1.4rem;
+    color: #fff;
+    text-transform: none;
+    background: rgba(0, 0, 61,0.1);
+}
+
+.login-form form .box::placeholder {
+    text-transform: capitalize;
+    font-size: 1.3rem;
+}
+
+.login-form form .box:focus {
+    color: #fff;
+    border-color: orangered;
+}
+
+.login-form form .box:nth-child(3) {
+    margin-bottom: 1rem;
+}
+
+.login-form form p {
+    font-size: 1.2rem;
+    color: #fff;
+    padding: .2rem .2rem;
+    margin: .5rem;
+}
+
+.login-form form p a {
+    color: rgb(0, 0, 61);
+    text-underline-offset: 4px;
+}
+
+.main-btn {
+    display: inline-block;
+    border-radius: .5rem;
+    color: white;
+    background-color: orangered;
+    text-transform: capitalize;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 0.625rem 1rem;
+    font-size: 1.5rem;
+    border: none;
+    font-family:  'Anek Latin';
+    
+}
+.main-btn:hover {
+    color: #fff;
+    background-color: rgb(0, 0, 61);
+
+    font-size: 1.7rem;
+    -webkit-transition: all .3s ease-out 0s;
+    -o-transition: all .3s ease-out 0s;
+    -moz-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s;
+}
+
+.login-form form .main-btn {
+    width: 100%;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 0.25rem 1.7rem;
+}
+ */
