@@ -574,7 +574,7 @@ h4 i {
     margin: 1rem;
     display: none;
 }
-.bg-modal .message{
+.bg-modal .login-message,.bg-modal .signup-message{
     position: relative;
     max-width: 300px;
     width: 100%;
