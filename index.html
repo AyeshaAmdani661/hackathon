@@ -130,7 +130,7 @@
                   <h3><i class="fa-solid color1 fa-clock"></i> 2 hours</h3>
                   <h3><i class="fa-solid color1 fa-calendar-alt"></i> 1 months</h3>
                   <h3><i class="fa-solid color1 fa-dollar-sign"></i> 90 dollars</h3>
-                  <a href="../more pages/form.html" class="white-btn mt-4"><span>Apply now</span></a>
+                  <a href="assets/more pages/form.html" class="white-btn mt-4"><span>Apply now</span></a>
                 </div>
               </div>
             </div>
@@ -158,7 +158,7 @@
                   <h3><i class="fa-solid color1 fa-clock"></i> 2 hours</h3>
                   <h3><i class="fa-solid color1 fa-calendar-alt"></i> 2 months</h3>
                   <h3><i class="fa-solid color1 fa-dollar-sign"></i> 80 dollars</h3>
-                  <a href="../more pages/form.html" class="white-btn mt-4"><span>Apply now</span></a>
+                  <a href="assets/more pages/form.html" class="white-btn mt-4"><span>Apply now</span></a>
                 </div>
               </div>
             </div>
@@ -186,7 +186,7 @@
                   <h3><i class="fa-solid color1 fa-clock"></i> 2 hours</h3>
                   <h3><i class="fa-solid color1 fa-calendar-alt"></i> 6 months</h3>
                   <h3><i class="fa-solid color1 fa-dollar-sign"></i> 70 dollars</h3>
-                  <a href="../more pages/form.html" class="white-btn mt-4"><span>Apply now</span></a>
+                  <a href="assets/more pages/form.html" class="white-btn mt-4"><span>Apply now</span></a>
                 </div>
               </div>
             </div>
@@ -214,7 +214,7 @@
                   <h3><i class="fa-solid color1 fa-clock"></i> 2 hours</h3>
                   <h3><i class="fa-solid color1 fa-calendar-alt"></i> 1 year</h3>
                   <h3><i class="fa-solid color1 fa-dollar-sign"></i> 70 dollars</h3>
-                  <a href="../more pages/form.html" class="white-btn mt-4"><span>Apply now</span></a>
+                  <a href="assets/more pages/form.html" class="white-btn mt-4"><span>Apply now</span></a>
                 </div>
               </div>
             </div>
@@ -242,7 +242,7 @@
                   <h3><i class="fa-solid color1 fa-clock"></i> 2 hours</h3>
                   <h3><i class="fa-solid color1 fa-calendar-alt"></i> 6 months</h3>
                   <h3><i class="fa-solid color1 fa-dollar-sign"></i> 50 dollars</h3>
-                  <a href="../more pages/form.html" class="white-btn mt-4"><span>Apply now</span></a>
+                  <a href="assets/more pages/form.html" class="white-btn mt-4"><span>Apply now</span></a>
                 </div>
               </div>
             </div>
@@ -271,7 +271,7 @@
                   <h3><i class="fa-solid color1 fa-calendar-alt"></i> 6 months</h3>
                   <h3><i class="fa-solid color1 fa-dollar-sign"></i> 90 dollars</h3>
 
-                  <a href="../more pages/form.html" class="white-btn mt-4"><span>Apply now</span></a>
+                  <a href="assets/more pages/form.html" class="white-btn mt-4"><span>Apply now</span></a>
                 </div>
               </div>
             </div>
@@ -564,45 +564,49 @@
           </span>
           <form>
             <div class="input-field">
-              <input type="email" placeholder="Enter your Name" required>
+              <input id="name" type="text" placeholder="Enter your Name" required>
               <i class="fa-solid fa-user"></i>
             </div>
             <div class="input-field">
-              <input type="email" placeholder="Email" required>
+              <input id="email" type="email" placeholder="Email" required>
               <i class="fa-solid fa-envelope"></i>
             </div>
             <div class="input-field">
-              <input type="password" class="password" placeholder="Password" required>
+              <input id="password" type="password" class="password" placeholder="Password" required>
               <i class="fa-solid fa-lock"></i>
             </div>
             <div class="input-field">
-              <input type="password" class="password" placeholder="Confirm Password" required>
+              <input id="confirmPassword" type="password" class="password" placeholder="Confirm Password" required>
               <i class="fa-solid fa-lock"></i>
               <i class="fa-solid fa-eye-slash show-hide"></i>
             </div>
             <div class="checkbox-text">
               <div class="checkbox-content">
                 <input type="checkbox" id="logCheck">
-                <br><br>
+                <br>
                 <label for="logCheck" class="text">Remember me</label>
               </div>
-              <a href="#" class="text">Forgot password?</a>
             </div>
-            <span class="main-btn signup-button">Login Now</span>
+            <span class="main-btn signup-button" onclick="checkFields('name','email','password','confirmPassword')">Login Now</span>
           </form>
-          <!-- <div class="login-signup">
-            <span class="text">
-              <a href="#" class="text login-link">login Now</a>
+          <div class="login-signup">
+            <span class="text">or Login with
+              <br>
+              <a href="https://www.facebook.com" target="_blank"><i class="mx-4 fab fa-facebook-f"
+                title="Facebook"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="mx-4 fab fa-twitter" title="Twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="mx-4 fab fa-instagram"
+                    title="Instagram"></i></a>
             </span>
-          </div> -->
+          </div>
         </div>
-        <div class="close">+</div>
+        <div class="close"><a href=""><i class="fa-solid fa-xmark"></i></a></div>
       </div>
     </div>
-    <div class="login-message text-center" onmouseover="hideLoginMessageOfBgmodal(),changeBackgoundOfBgmodalAgain()">
+    <div class="login-message text-center" onmouseover="hideLoginMessageOfBgmodal()">
       Congratulations<b class="color"> ! </b><br> You are Successfully Logged in. 
     </div>
-    <div class="signup-message text-center" onmouseover="hideSignupMessageOfBgmodal(),changeBackgoundOfBgmodalAgain()">
+    <div class="signup-message text-center">
       Congratulations<b class="color"> ! </b><br> You are member now. 
     </div>
   </div>

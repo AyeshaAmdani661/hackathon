@@ -566,7 +566,6 @@ h4 i {
 .bg-modal .container{
     position: relative;
     max-width: 330px;
-    width: 100%;
     background: rgb(0, 0, 61);
     border-radius: 10px;
     box-shadow: 0 5px 10px rgb(36, 36, 36);
@@ -575,24 +574,25 @@ h4 i {
     display: none;
 }
 .bg-modal .login-message,.bg-modal .signup-message{
-    position: relative;
+    position: absolute;
     max-width: 300px;
-    width: 100%;
     background: rgb(0, 0, 61);
     border-radius: 10px;
-    box-shadow: 0 5px 10px rgb(36, 36, 36);
+    box-shadow: 0 2px 15px rgb(128, 127, 127);
     overflow: hidden;
     display: none;
     padding: 2rem;
     color: #fff;
-    /* font-weight: bold; */
     font-size: 20px;
+}
+.bg-modal .login-message:hover,.bg-modal .signup-message:hover{
+    font-size: 23px;
 }
 .bg-modal .container .forms{
     width: 200%;
     transition: height 0.2s ease;
     display: flex;
-    height: 430px;
+    height: 410px;
     align-items: center;
 }
 
@@ -621,7 +621,7 @@ h4 i {
 }
 
 .bg-modal .container .form .input-field{
-    margin-top: 30px;
+    margin-top: 25px;
     height: 30px;
     width: 100%;
     position: relative;
@@ -629,7 +629,7 @@ h4 i {
 .input-field input{
     height: 100%;
     width: 100%;
-    padding: 10px 40px;
+    padding: 0px 40px;
     position: absolute;
     border: none;
     outline: none;
@@ -694,9 +694,20 @@ h4 i {
     color: #fff;
     font-size: 1.1rem;
 }
-
+.form .login-signup a i {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-top: 1rem;
+    padding: 0.2rem;
+}
+.form .login-signup a i:hover {
+    font-size: 1.5rem;
+    color: rgb(0, 0, 61, 0.9);
+    background-color: #fff;
+    border-radius: 3rem;
+}
 form span.main-btn{
-    margin: 1rem 0;
+    margin: 0.5rem 0;
     width: 100%;
     text-align: center;
     border-radius: 10px;
@@ -706,19 +717,17 @@ form span.main-btn{
     /* margin-top: 30px; */
     text-align: center;
 }
-
-
-
-.close {
+.close a{
     position: absolute;
     top: 0;
     right: 14px;
-    font-size: 42px;
-    transform: rotate(45deg);
+    font-size: 30px;
     cursor: pointer;
     color: #fff;
 }
-
+.close a:hover{
+    color: rgb(255, 106, 52);
+}
 @media (max-width: 575.98px) {
     .img {
         width: 380px;

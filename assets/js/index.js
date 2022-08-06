@@ -1,3 +1,4 @@
+let signupMessage = document.querySelector('.bg-modal .signup-message');
 scrollBody = () => {
     document.querySelector('body').style.overflow = 'scroll';
 }
@@ -16,12 +17,6 @@ showBgmodal = () => {
 hideBgmodal = () => {
     document.querySelector('.bg-modal').style.display = 'none';
 }
-changeBackgoundOfBgmodal = () => {
-    document.querySelector('.bg-modal').style.background = 'rgba(0, 0, 0, 0.3)';
-}
-changeBackgoundOfBgmodalAgain = () => {
-    document.querySelector('.bg-modal').style.background = 'rgba(0, 0, 0, 0.7)';
-}
 showContainerOfBgmodal = () => {
     document.querySelector('.bg-modal .container').style.display = 'block';
 }
@@ -38,16 +33,13 @@ hideLoginMessageOfBgmodal = () => {
     addFixedtopClass();
 }
 showSignupMessageOfBgmodal = () => {
-    document.querySelector('.bg-modal .signup-message').style.display = 'block';
+    signupMessage.style.display = 'block';
 }
 hideSignupMessageOfBgmodal = () => {
     document.querySelector('.bg-modal .signup-message').style.display = 'none';
-    hideBgmodal();
-    scrollBody();
-    addFixedtopClass();
 }
 loginStyle = () => {
-    forms.style.height = '430px'
+    forms.style.height = '410px'
     forms.style.marginLeft = '0%'
 }
 close = () => {
@@ -70,13 +62,63 @@ document.querySelector('.login-button').addEventListener('click', function () {
     hideContainerOfBgmodal();
     changeBackgoundOfBgmodal();
     showLoginMessageOfBgmodal();
+    clearAllField();
 });
-document.querySelector('.signup-button').addEventListener('click', function () {
+signupFunction = () => {
+    document.querySelector('.signup-button').addEventListener('click', function () {
+        showBgmodal();
+        showSignupMessageOfBgmodal();
+    });
+}
+checkFieldValues= (name, email, password, confirmPassword)=>{
+    if (document.getElementById(name).value === "" && document.getElementById(email).value === ""
+        && document.getElementById(password).value === "" && document.getElementById(confirmPassword).value === "") {
+        signupMessage.innerHTML = 'Please Enter All The Fields.';
+        signupFunction();
+    }
+}
+checkPasswords =(name, email, password, confirmPassword)=>{
+    if ((document.getElementById(name).value !== "" && document.getElementById(email).value !== ""
+    && document.getElementById(password).value !== "" && document.getElementById(confirmPassword).value !== "") 
+    && document.getElementById(password).value !== document.getElementById(confirmPassword).value) {
+        signupMessage.innerHTML = 'Please Check Your Passwords.';
+        signupFunction();
+    }
+}
+checkFieldValues1= (name, email, password, confirmPassword)=>{
+    if  ((document.getElementById(name).value !== "" && document.getElementById(email).value !== ""
+    && document.getElementById(password).value !== "" && document.getElementById(confirmPassword).value !== "")
+    &&(document.getElementById(password).value === document.getElementById(confirmPassword).value)) {
+        signupMessage.innerHTML = 'Congratulations<b class="color"> ! </b><br> You Are Member Now.';
+        signupFunction();
+        hideContainerOfBgmodal();
+    }
+}
+checkFields = (name, email, password, confirmPassword) => {
+    checkFieldValues(name, email, password, confirmPassword);
+    checkPasswords(name, email, password, confirmPassword);
+    checkFieldValues1(name, email, password, confirmPassword);
+}
+document.querySelector('.signup-message').addEventListener('click', function () {
+    hideSignupMessageOfBgmodal();
     showBgmodal();
-    hideContainerOfBgmodal();
-    changeBackgoundOfBgmodal();
-    showSignupMessageOfBgmodal();
+    showContainerOfBgmodal();
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 let container = document.querySelector('.container'),
     showHide = document.querySelectorAll('.show-hide'),
@@ -103,12 +145,12 @@ showHide.forEach(eyeIcon => {
     })
 })
 signUp.addEventListener("click", () => {
-    forms.style.height = '540px'
+    forms.style.height = '490px'
     forms.style.marginLeft = '-100%'
 });
-login.addEventListener("click", () => {
-loginStyle();
-});
+// login.addEventListener("click", () => {
+// loginStyle();
+// });
 //  function display (a){
 //     a
 //     return a;
