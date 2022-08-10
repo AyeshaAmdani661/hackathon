@@ -489,11 +489,11 @@
           <span class="title">Login</span>
           <form>
             <div class="input-field">
-              <input type="email" placeholder="Email" required>
+              <input id="email1" type="email" placeholder="Email" required>
               <i class="fa-solid fa-envelope icon"></i>
             </div>
             <div class="input-field">
-              <input type="password" class="password" placeholder="Password" required>
+              <input id="password1" type="password" class="password" placeholder="Password" required>
               <i class="fa-solid fa-lock icon"></i>
               <i class="fa-solid fa-eye-slash show-hide"></i>
             </div>
@@ -505,7 +505,7 @@
               </div>
               <a href="#" class="text">Forgot password?</a>
             </div>
-            <span class="main-btn login-button">Login Now</span>
+            <span class="main-btn login-button"  onclick="checkLoginFields('email1','password1')">Login Now</span>
           </form>
           <div class="login-signup">
             <span class="text">Not a member?
@@ -559,7 +559,7 @@
         <div class="close"><a href=""><i class="fa-solid fa-xmark"></i></a></div>
       </div>
     </div>
-    <div class="login-message text-center" onmouseover="hideLoginMessageOfBgmodal()">
+    <div class="login-message text-center">
       Congratulations<b class="color"> ! </b><br> You are Successfully Logged in. 
     </div>
     <div class="signup-message text-center">

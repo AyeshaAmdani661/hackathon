@@ -1,4 +1,5 @@
 let signupMessage = document.querySelector('.bg-modal .signup-message');
+let loginMessage = document.querySelector('.bg-modal .login-message');
 scrollBody = () => {
     document.querySelector('body').style.overflow = 'scroll';
 }
@@ -24,13 +25,13 @@ hideContainerOfBgmodal = () => {
     document.querySelector('.bg-modal .container').style.display = 'none';
 }
 showLoginMessageOfBgmodal = () => {
-    document.querySelector('.bg-modal .login-message').style.display = 'block';
+    loginMessage.style.display = 'block';
 }
 hideLoginMessageOfBgmodal = () => {
     document.querySelector('.bg-modal .login-message').style.display = 'none';
-    hideBgmodal();
-    scrollBody();
-    addFixedtopClass();
+    // hideBgmodal();
+    // scrollBody();
+    // addFixedtopClass();
 }
 showSignupMessageOfBgmodal = () => {
     signupMessage.style.display = 'block';
@@ -57,40 +58,34 @@ document.getElementById('login').addEventListener('click', function () {
 document.querySelector('.close').addEventListener('click', function () {
     close();
 });
-document.querySelector('.login-button').addEventListener('click', function () {
-    showBgmodal();
-    hideContainerOfBgmodal();
-    changeBackgoundOfBgmodal();
-    showLoginMessageOfBgmodal();
-    clearAllField();
-});
+
 signupFunction = () => {
     document.querySelector('.signup-button').addEventListener('click', function () {
         showBgmodal();
         showSignupMessageOfBgmodal();
     });
 }
-checkFieldValues= (name, email, password, confirmPassword)=>{
+checkFieldValues = (name, email, password, confirmPassword) => {
     if (document.getElementById(name).value === "" && document.getElementById(email).value === ""
         && document.getElementById(password).value === "" && document.getElementById(confirmPassword).value === "") {
         signupMessage.innerHTML = 'Please Enter All The Fields.';
         signupFunction();
     }
 }
-checkPasswords =(name, email, password, confirmPassword)=>{
+checkPasswords = (name, email, password, confirmPassword) => {
     if ((document.getElementById(name).value !== "" && document.getElementById(email).value !== ""
-    && document.getElementById(password).value !== "" && document.getElementById(confirmPassword).value !== "") 
-    && document.getElementById(password).value !== document.getElementById(confirmPassword).value) {
+        && document.getElementById(password).value !== "" && document.getElementById(confirmPassword).value !== "")
+        && document.getElementById(password).value !== document.getElementById(confirmPassword).value) {
         signupMessage.innerHTML = 'Please Check Your Passwords.';
         signupFunction();
     }
 }
-checkFieldValues1= (name, email, password, confirmPassword)=>{
-    if  ((document.getElementById(name).value !== "" && document.getElementById(email).value !== ""
-    && document.getElementById(password).value !== "" && document.getElementById(confirmPassword).value !== "")
-    &&(document.getElementById(password).value === document.getElementById(confirmPassword).value)) {
+checkFieldValues1 = (name, email, password, confirmPassword) => {
+    if ((document.getElementById(name).value !== "" && document.getElementById(email).value !== ""
+        && document.getElementById(password).value !== "" && document.getElementById(confirmPassword).value !== "")
+        && (document.getElementById(password).value === document.getElementById(confirmPassword).value)) {
         signupMessage.innerHTML = 'Congratulations<b class="color"> ! </b><br> You Are Member Now.';
-        signupFunction();
+        showSignupMessageOfBgmodal();
         hideContainerOfBgmodal();
     }
 }
@@ -98,28 +93,44 @@ checkFields = (name, email, password, confirmPassword) => {
     checkFieldValues(name, email, password, confirmPassword);
     checkPasswords(name, email, password, confirmPassword);
     checkFieldValues1(name, email, password, confirmPassword);
+    if (signupMessage.innerHTML === 'Congratulations<b class="color"> ! </b><br> You Are Member Now.') {
+        document.querySelector('.signup-message').addEventListener('click', function () {
+            close();
+        });
+    }
+}
+loginFunction = () => {
+    document.querySelector('.login-button').addEventListener('click', function () {
+        showBgmodal();
+        showLoginMessageOfBgmodal();
+    });
+}
+checkLoginFields = (email1, password1) => {
+    if (document.getElementById(email1).value === "" || document.getElementById(password1).value === "") {
+        loginMessage.innerHTML = 'Please Enter Both The Fields.'
+        loginFunction();
+    }
+    else {
+        loginMessage.innerHTML = 'Congratulations<b class="color"> ! </b><br> You Are Successfully Logged in';
+        showLoginMessageOfBgmodal();
+        hideContainerOfBgmodal();
+    }
+    if (loginMessage.innerHTML === 'Congratulations<b class="color"> ! </b><br> You Are Successfully Logged in') {
+        document.querySelector('.login-message').addEventListener('click', function () {
+            close();
+        });
+    }
 }
 document.querySelector('.signup-message').addEventListener('click', function () {
     hideSignupMessageOfBgmodal();
     showBgmodal();
     showContainerOfBgmodal();
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+document.querySelector('.login-message').addEventListener('click', function () {
+    hideLoginMessageOfBgmodal();
+    showBgmodal();
+    showContainerOfBgmodal();
+});
 let container = document.querySelector('.container'),
     showHide = document.querySelectorAll('.show-hide'),
     password = document.querySelectorAll('.password'),
@@ -148,15 +159,7 @@ signUp.addEventListener("click", () => {
     forms.style.height = '490px'
     forms.style.marginLeft = '-100%'
 });
-// login.addEventListener("click", () => {
-// loginStyle();
-// });
-//  function display (a){
-//     a
-//     return a;
-//  }
-// var displayNone = document.querySelector('.bg-modal').style.display = 'none';
-// var displayresult = document.querySelector('.bg-modal').style.display = 'flex';
+
 
 
 
