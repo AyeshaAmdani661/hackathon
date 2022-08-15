@@ -113,14 +113,14 @@ a, a:hover, a:focus {
     display: inline-block;
     border-radius: 3rem;
     color: white;
-    background-color: orangered;
+    background:orangered;
     text-transform: capitalize;
     overflow: hidden;
     z-index: 0;
     position: relative;
     cursor: pointer;
     padding: 0.525rem 1.875rem;
-    font-size: 1.275rem;
+    font-size: 1.5rem;
 }
 
 .main-btn::before {
@@ -153,7 +153,8 @@ a, a:hover, a:focus {
     display: inline-block;
     border-radius: 3rem;
     color: white;
-    background-color: rgb(0, 0, 61);
+    background-color: transparent;
+    border: #fff 1px solid;
     text-transform: capitalize;
     overflow: hidden;
     z-index: 0;
@@ -189,7 +190,7 @@ a, a:hover, a:focus {
     transition: all .3s ease-out 0s;
 }
 
-.white-btn {
+/* .white-btn {
     display: inline-block;
     border-radius: 2rem;
     color: white;
@@ -213,6 +214,49 @@ a, a:hover, a:focus {
     border: #fff solid 5px;
     font-size: 1.675rem;
     background-color: rgb(0, 0, 61);
+} */
+
+.white-btn {
+    position: relative;
+    display: inline-flex;
+    border-radius: 3rem;
+    color: white;
+    background-color: rgb(0, 0, 61);
+    text-transform: capitalize;
+    font-weight: 600;
+    padding: 0.625rem 1.875rem;
+    font-size: 1.375rem;
+    box-shadow: 0px 2px 10px -1px rgb(0, 0, 0 / 19%);
+    overflow: hidden;
+    border: #fff solid 8px;
+    letter-spacing: 1px;
+    transition: all .3s ease-out 0s;
+}
+.white-btn:hover {
+    color: #fff;
+    border: #fff solid 5px;
+    font-size: 1.575rem;
+    padding: 0.625rem 1.475rem
+    /* background-color: rgb(0, 0, 61); */
+} 
+.white-btn span {
+    position: relative;
+    z-index: 1;
+}
+.white-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 54px;
+    background: #ff5517;
+    border-radius: 8rem;
+    transition: width 1.2s, height 1.2s;
+}
+.white-btn:hover::before {
+    width: 700px;
+    height: 700px;
 }
 
 .blue-btn {
@@ -224,11 +268,19 @@ a, a:hover, a:focus {
     text-transform: capitalize;
     font-weight: 600;
     padding: 0.85rem 2rem;
+    letter-spacing: 1px;
     font-size: 1.275rem;
-    box-shadow: 0px 2px 10px -1px rgb(0, 0, 0 / 19%);
+    /* box-shadow: -5px -5px 15px rgba(212, 212, 212, 0.2)
+    ,15px 15px 15px rgba(0,0,0,0.2); */
     overflow: hidden;
+    transition: all .3s ease-out 0s;
+    font-family: Arial, Helvetica, sans-serif;
 }
+.blue-btn:hover{
+    color: #fff;
+    font-size: 1.575rem;
 
+}
 .blue-btn span {
     position: relative;
     z-index: 1;
@@ -241,7 +293,7 @@ a, a:hover, a:focus {
     right: 0;
     width: 64px;
     height: 58px;
-    background: #ff6730;
+    background: #ff5517;
     border-radius: 8rem;
     transition: width 1.2s, height 1.2s;
 }
@@ -431,9 +483,9 @@ hr {
 }
 
 #teachers .container .carousel-inner .card1 .card1-thumb .teacher-name:hover {
-    padding: 9px 30px;
+    /* padding: 9px 30px; */
     bottom: 2rem;
-    font-size: 22px;
+    font-size: 20px;
     transition: all 0.5s;
 }
 
@@ -697,13 +749,12 @@ h4 i {
 .form .login-signup a i {
     font-size: 1.2rem;
     color: #fff;
-    margin-top: 1rem;
-    padding: 0.2rem;
+    margin-top: 0.5rem;
+    padding: 0.3rem;
 }
 .form .login-signup a i:hover {
     font-size: 1.5rem;
-    color: rgb(0, 0, 61, 0.9);
-    background-color: #fff;
+    background-color: orangered;
     border-radius: 3rem;
 }
 form span.main-btn{
@@ -805,14 +856,14 @@ form span.main-btn{
     }
 
     #teachers .container .carousel-inner .card1 .card1-thumb .teacher-name {
-        padding: 1px 5px;
-        font-size: 12px;
+        padding: 5px 10px;
+        font-size: 15px;
     }
 
     #teachers .container .carousel-inner .card1 .card1-thumb .teacher-name:hover {
-        padding: 2px 10px;
+        /* padding: 5px 12px; */
         bottom: 1rem;
-        font-size: 15px;
+        font-size: 20px;
         transition: all 0.5s;
     }
 
@@ -826,8 +877,8 @@ form span.main-btn{
     }
 
     #teachers .container .carousel-inner .card1 .card1-body .review {
-        font-size: 15px;
-        line-height: 20px;
+        font-size: 20px;
+        line-height: 30px;
     }
 
     #teachers .container .carousel-indicators {
@@ -881,8 +932,15 @@ form span.main-btn{
     }
 
     #teachers .container .carousel-inner .card1 .card1-thumb .teacher-name {
-        padding: 2px 10px;
+        padding: 5px 7px;
         font-size: 15px;
+    }
+
+    #teachers .container .carousel-inner .card1 .card1-thumb .teacher-name:hover {
+        /* padding: 5px 12px; */
+        bottom: 1rem;
+        font-size: 20px;
+        transition: all 0.5s;
     }
 
     #teachers .container .carousel-inner .card1 .card1-body {
@@ -895,7 +953,7 @@ form span.main-btn{
     }
 
     #teachers .container .carousel-inner .card1 .card1-body .review {
-        font-size: 15px;
+        font-size: 20px;
         line-height: 30px;
     }
 
@@ -971,7 +1029,7 @@ form span.main-btn{
     }
 
     #teachers .container .carousel-inner .card1 .card1-body .review {
-        font-size: 22px;
+        font-size: 20px;
         line-height: 30px;
     }
 
