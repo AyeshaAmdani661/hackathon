@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
     height: 100%;
     word-spacing: 3px;
@@ -58,7 +59,6 @@ a, a:hover, a:focus {
     /* text-decoration-color: orangered; */
     color: #ff6128;
 }
-
 .navbar-brand, .navbar-brand:hover, .navbar-brand:focus {
     color: white;
     font-weight: 800;
@@ -173,15 +173,56 @@ a, a:hover, a:focus {
     -moz-transition: all .3s ease-out 0s;
     transition: all .3s ease-out 0s;
 }
+.blue-btn {
+    position: relative;
+    display: inline-flex;
+    border-radius: 3rem;
+    color: white;
+    background-color: rgb(0, 0, 61);
+    text-transform: capitalize;
+    font-weight: normal;
+    padding: 0.85rem 2rem;
+    font-size: 1.375rem;
+    overflow: hidden;
+    letter-spacing: 1px;
+    transition: all .3s ease-out 0s;
+}
+.blue-btn:hover {
+    color: #fff;
+    font-size: 1.575rem;
+    box-shadow: -3px -3px 7px rgb(248, 247, 247,0.5)
+    ,15px 15px 15px rgba(77, 76, 76, 0.5);
+} 
+.blue-btn span {
+    position: relative;
+    z-index: 1;
+}
 
+.blue-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 64px;
+    height: 60px;
+    background: #ff5517;
+    border-radius: 8rem;
+    transition: width 1.2s, height 1.2s;
+}
+.blue-btn:hover::before {
+    width: 700px;
+    height: 700px;
+}
+
+/* 
 .new-btn {
     display: inline-block;
     border-radius: 3rem;
     color: white;
     background-color:#ff4500;
     /* border: #fff 1px solid; */
-        box-shadow: -5px -5px 15px rgba(224, 224, 224, 0.2)
-    ,15px 15px 15px rgba(114, 113, 113, 0.2);
+        /* box-shadow: -5px -5px 15px rgba(224, 224, 224, 0.2) */
+    /* ,15px 15px 15px rgba(114, 113, 113, 0.2); 
     transition: all .3s ease-out 0s;
     text-transform: capitalize;
     overflow: hidden;
@@ -216,7 +257,7 @@ a, a:hover, a:focus {
     -o-transition: all .3s ease-out 0s;
     -moz-transition: all .3s ease-out 0s;
     transition: all .3s ease-out 0s;
-}
+} */
 
 /* .white-btn {
     display: inline-block;
@@ -254,7 +295,7 @@ a, a:hover, a:focus {
     font-weight: 600;
     padding: 0.625rem 1.875rem;
     font-size: 1.375rem;
-    box-shadow: 0px 2px 10px -1px rgb(0, 0, 0 / 19%);
+    /* box-shadow: 0px 2px 10px -1px rgb(0, 0, 0 / 19%); */
     overflow: hidden;
     border: #fff solid 8px;
     letter-spacing: 1px;
@@ -287,44 +328,45 @@ a, a:hover, a:focus {
     height: 700px;
 }
 
-.blue-btn {
+.new-btn {
     position: relative;
     display: inline-flex;
     border-radius: 3rem;
     color: white;
-    background-color: rgb(25, 78, 138);
+    background: rgb(0, 0, 61,0.2);
+            box-shadow: -3px -3px 7px rgb(248, 247, 247,0.3)
+    ,15px 15px 15px rgba(114, 113, 113, 0.2);
     text-transform: capitalize;
     font-weight: 600;
-    padding: 0.85rem 2rem;
+    padding: 0.65rem 1.7rem;
     letter-spacing: 1px;
-    font-size: 1.275rem;
+    font-size: 1.575rem;
     overflow: hidden;
     transition: all .3s ease-out 0s;
-    font-family: Arial, Helvetica, sans-serif;
 }
-.blue-btn:hover{
+.new-btn:hover{
     color: #fff;
-    font-size: 1.575rem;
-
+    font-size: 1.775rem;
+    /* background-color: ; */
 }
-.blue-btn span {
+.new-btn span {
     position: relative;
     z-index: 1;
 }
 
-.blue-btn::before {
+.new-btn::before {
     content: '';
     position: absolute;
     top: 0;
     right: 0;
     width: 64px;
     height: 58px;
-    background: orangered;
+    background: rgb(255, 69, 0,.9);
     border-radius: 8rem;
     transition: width 1.2s, height 1.2s;
 }
 
-.blue-btn:hover::before {
+.new-btn:hover::before {
     width: 800px;
     height: 800px;
 }
@@ -403,7 +445,7 @@ hr {
     display: inline-block;
     border: #ff4500;
     width: 18rem;
-    height: 27rem;
+    height: 28rem;
     margin: 3rem 3rem;
     background-color: rgb(0, 0, 61);
     color: #fff;
@@ -1000,8 +1042,7 @@ form span.main-btn{
 
     .card {
         width: 15rem;
-        height: 26rem;
-
+        height: 28rem;
     }
 
     .card-body h1 {
