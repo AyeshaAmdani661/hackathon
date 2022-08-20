@@ -127,6 +127,33 @@ select,input{
     border: #fff 1px solid;
     border-radius: 0.31rem;
 } */
+.bg-modal {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.bg-modal .enrollment-message{
+    position: absolute;
+    max-width: 300px;
+    background: rgb(0, 0, 61);
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgb(128, 127, 127);
+    overflow: hidden;
+    display: none;
+    padding: 2rem;
+    color: #fff;
+    font-size: 20px;
+}
+.bg-modal .enrollment-message:hover {
+    font-size: 23px;
+}
 @media (max-width: 575.98px) {
     select,input{
         height: 60%;

@@ -1,3 +1,11 @@
+const toTop = document.querySelector('.to-top');
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 100) {
+        toTop.classList.add("active");
+    } else {
+        toTop.classList.remove("active");
+    }
+});
 let signupMessage = document.querySelector('.bg-modal .signup-message');
 let loginMessage = document.querySelector('.bg-modal .login-message');
 scrollBody = () => {
@@ -159,8 +167,25 @@ signUp.addEventListener("click", () => {
     forms.style.height = '490px'
     forms.style.marginLeft = '-100%'
 });
-
-
+showEnrollmentMessageOfBgmodal = () => {
+    enrollmentMessage.style.display = 'block';
+}
+hideEnrollmentMessageOfBgmodal = () => {
+    enrollmentMessage.style.display = 'none';
+}
+var enrollmentMessage = document.querySelector('.bg-modal .enrollment-message');
+showCourseEnrollmentMessage = (firstName,lastName,course) => {
+    hiddenBody();
+    showBgmodal();
+    if (document.getElementById(firstName).value === "" && document.getElementById(lastName).value === "" && document.getElementById(course).value === ""){
+        alert('please enter the detail')
+    }else {
+        enrollmentMessage.innerHTML = "Congratulations";
+        showEnrollmentMessageOfBgmodal();  
+    }
+    enrollmentMessage.innerHTML = "Congratulations <b class='color'> ! </b> Dear "+ fName + " " + lName + " You are enrolled inb" + courseName + " course";
+    showEnrollmentMessageOfBgmodal();
+}
 
 
 
