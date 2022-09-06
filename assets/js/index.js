@@ -188,7 +188,6 @@ showCourseEnrollmentMessage = (firstName, lastName, course) => {
 }
 
 var questionSection = document.querySelector('#anyQuestion');
-var questionInTextarea = document.querySelector('.question');
 var que = document.querySelector('.que');
 var btn = document.querySelector('.btn');
 var ans = document.querySelector('.ans');
