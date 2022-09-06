@@ -729,23 +729,33 @@ hr {
 .copy-right a ,.copy-right a:hover,.copy-right a:focus{
     color: orangered;
 }
-/* .footer .col h5:hover ~ .chat {
-    color: orangered;
-    display: block;
+#anyQuestion{
+    cursor: pointer;
 }
-.chat{
-    position: absolute;
-    right: 50px;
+.que{
     display: none;
-    height: 200px;
-} */
-
-.title {
+}
+.que .btn{
+    color: #fff;
+    background-color: #ff4500;
+    box-shadow: 0px 3px 10px #494949;
+}
+.que .btn:hover{
+    font-size: 22px;
+}
+.question{
+    color: #fff;
+    background-color: transparent;
+}
+.ans{
+    display: none;
+}
+.footer .title {
     position: relative;
     color: #fff;
 }
 
-.title::before {
+.footer .title::before {
     content: '';
     position: absolute;
     left: 0;

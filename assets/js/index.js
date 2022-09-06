@@ -174,29 +174,35 @@ hideEnrollmentMessageOfBgmodal = () => {
     enrollmentMessage.style.display = 'none';
 }
 var enrollmentMessage = document.querySelector('.bg-modal .enrollment-message');
-showCourseEnrollmentMessage = (firstName,lastName,course) => {
+showCourseEnrollmentMessage = (firstName, lastName, course) => {
     hiddenBody();
     showBgmodal();
-    if (document.getElementById(firstName).value === "" && document.getElementById(lastName).value === "" && document.getElementById(course).value === ""){
+    if (document.getElementById(firstName).value === "" && document.getElementById(lastName).value === "" && document.getElementById(course).value === "") {
         alert('please enter the detail')
-    }else {
+    } else {
         enrollmentMessage.innerHTML = "Congratulations";
-        showEnrollmentMessageOfBgmodal();  
+        showEnrollmentMessageOfBgmodal();
     }
-    enrollmentMessage.innerHTML = "Congratulations <b class='color'> ! </b> Dear "+ fName + " " + lName + " You are enrolled inb" + courseName + " course";
+    enrollmentMessage.innerHTML = "Congratulations <b class='color'> ! </b> Dear " + fName + " " + lName + " You are enrolled inb" + courseName + " course";
     showEnrollmentMessageOfBgmodal();
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+var questionSection = document.querySelector('#anyQuestion');
+var questionInTextarea = document.querySelector('.question');
+var que = document.querySelector('.que');
+var btn = document.querySelector('.btn');
+var ans = document.querySelector('.ans');
+displayAns = () => {
+    ans.style.display = 'block'
+};
+displayNone = () => {
+    ans.style.display = 'none';
+};
+questionSection.addEventListener('click', () => {
+    que.style.display = 'block';
+});
+btn.addEventListener('click', () => {
+    que.style.display = 'none';
+    setTimeout(displayAns, 1000);
+    setTimeout(displayNone, 5000);
+});
